@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Karpinski Resume</title>
+	<style type="text/css">
+		h1{
+			margin: auto;
+		}
+		.Karpinski-wrapper{
+			width: 900px;
+			margin: auto;
+		}
+		.top{
+			width: 900px;
+			height: 150px;
+		}
+		.top-left{
+			background-color: lightblue;
+			width: 300px;
+			float: left;
+			height: 148px;
+			border-bottom: 2px solid black;
+		}
+		.top-leftpic{
+			padding-left: 60px;
+		}
+		.top-right{
+			background-color: powderblue;
+			width: 598px;
+			height: 148px;
+			float: right;
+			border-left: 2px solid black;
+			border-bottom: 2px solid black;
+		}
+		.top-righttext{
+			text-align: center;
+			padding-top: 30px;
+			font-family: courier new;
+		}
+		.middle{
+			background-color: black;
+			font-family: courier new;
+			width: 900px;
+		}
+		.middle-leftfiller{
+			width: 300px;
+			float: left;
+			background-color: black;
+			color: lightgray;
+			text-align: center;
+		}
+		.middle-leftfiller p{
+			font-weight: bold;
+		}
+		.middle-rightnav{
+			float: left;
+			background-color: black;
+			text-align: center;
+			color: lightgray;
+			height: 50px;
+			width: 598;
+		}
+		.navbar{
+			width: 100px;
+			float: left;
+		}
+		.navbar a{
+			display: block;
+			color: lightgray;
+			text-align: center;
+			padding: 14px 20px;
+			text-decoration: none;
+			height: 22px;
+		}
+		.navbar a:hover{
+			background-color: steelblue;
+		}
+		/* Dropdown Button */
+		.dropbtn {
+  			background-color: black;
+  			color: lightgray;
+  			padding: 16px;
+  			border: none;
+  			float: left;
+  			width: 100px;
+  			font-family: courier new;
+  			height: 50px;
+		}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+  			position: relative;
+  			display: inline-block;
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+  			display: none;
+  			position: absolute;
+  			background-color: darkgray;
+  			min-width: 160px;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+  			margin-top: 52px;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+  			color: black;
+  			padding: 12px 16px;
+  			text-decoration: none;
+  			display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: lightgray;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {background-color: steelblue;}
+		.filler{
+			background-color: black;
+			width: 400px;
+			float: right;
+			height: 50px;
+		}
+		.bottom{
+			width: 900px;
+			height: 850px;
+			margin-top: 50px;
+			border-top: 2px solid black;
+		}
+		.bottom-left{
+			background-color: darkgray;
+			width: 300px;
+			float: left;
+			font-family: courier new;
+		}
+		.bottom-leftcontact-header{
+			margin-left: 20px;
+		}
+		.bottom-leftcontact-header h2{
+			margin-bottom: 0px;
+		}
+		.bottom-leftcontact-pics{
+			float: left;
+			width: 30px;
+			margin-left: 10px;
+		}
+		.bottom-leftcontact-pic1{
+			margin-bottom: 5px;
+			margin-top: 10px;
+		}
+		.bottom-leftcontact-pic3{
+			margin-top: 12px;
+		}
+		.bottom-leftcontact-texts{
+			float: right;
+			width: 260px;
+			margin-bottom: 10px;
+		}
+		.bottom-leftcontact-text1{
+			margin-left: 10px;
+		}
+		.bottom-leftcontact-text1 p{
+			font-size: 15px;
+		}
+		.bottom-leftcontact-text2{
+			margin-left: 10px;
+		}
+		.bottom-leftcontact-text2 p{
+			font-size: 15px;
+		}
+		.bottom-leftcontact-text3{
+			margin-left: 10px;
+		}
+		.bottom-leftprofile h2{
+			margin-bottom: 0px;
+		}
+		.bottom-leftprofile p{
+			margin: 0px;
+			line-height: 22px;
+		}
+		.bottom-leftprofile-header{
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+		.bottom-leftprofile-text{
+			margin-left: 20px;
+			padding-right: 2px;
+		}
+		.bottom-leftsports{
+			margin-bottom: 16px;
+		}
+		.bottom-leftsports h2{
+			margin-bottom: 0px;
+		}
+		.bottom-leftsports p{
+			margin: 0px;
+			line-height: 22px;
+		}
+		.bottom-leftsports-header{
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+		.bottom-leftsports-text1{
+			margin-left: 20px;
+			padding-right: 2px;
+			margin-bottom: 10px;
+		}
+		.bottom-leftsports-text2{
+			margin-left: 20px;
+			padding-right: 2px;
+		}
+		.bottom-right{
+			background-color: lightgray;
+			float: right;
+			width: 598px;
+			border-left: 2px solid black;
+			font-family: courier new;
+		}
+		.bottom-righteducation p{
+			margin:  0px;
+		}
+		.bottom-righteducation-header{
+			margin-left: 20px;
+		}
+		.bottom-righteducation-header h2{
+			margin-bottom: 0px;
+		}
+		.bottom-righteducation-text1{
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+		.bottom-righteducation-list1 ul{
+			margin-top: 0px;
+			line-height: 30px;
+		}
+		.bottom-righteducation-text2{
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.bottom-righteducation-list2 ul{
+			margin-top: 0px;
+			line-height: 30px;
+		}
+		.bottom-rightexperience p{
+			margin: 0px;
+		}
+		.bottom-rightexperience-header{
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+		.bottom-rightexperience-header h2{
+			margin-bottom: 0px;
+		}
+		.bottom-rightexperience-text1{
+			font-weight: bold;
+			margin-left: 20px;
+		}
+		.bottom-rightexperience-text2{
+			font-style: italic;
+			margin-left: 20px;
+			margin-top: 0px;
+		}
+		.bottom-rightexperience-list1 ul{
+			margin-top: 5px;
+			line-height: 30px;
+		}
+		.bottom-rightexperience-text3{
+			font-weight: bold;
+			margin-left: 20px;
+			margin-top: 30px;
+		}
+		.bottom-rightexperience-text4{
+			font-style: italic;
+			margin-left: 20px;
+			margin-top: 0px;
+		}
+		.bottom-rightexperience-list2 ul{
+			margin-top: 5px;
+			line-height: 30px;
+		}
+		.bottom-rightawards{
+			margin-bottom: 20px;
+		}
+		.bottom-rightawards ul{
+			margin: 0px;
+			line-height: 30px;
+		}
+		.bottom-rightawards h2{
+			margin-bottom: 0px;
+		}
+		.bottom-rightawards-header{
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="Karpinski-wrapper">
+		<div class="top">
+			<div class="top-left">
+				<div class="top-leftpic">
+					<img src="Images/pic.png" width="150px" height="150px">
+				</div>
+			</div>
+			<div class="top-right">
+				<div class="top-righttext">
+					<h1>Julia Karpinski</h1>
+					<p>Sophomore at Bernards High School</p>
+				</div>
+			</div>
+		</div>
+		<div class="middle">
+			<div class="middle-leftfiller">
+				<p>Navigation Bar</p>
+			</div>
+			<div class="middle-rightnav">
+				<div class="navbar">
+					<a href="index.html">Home</a>
+				</div>
+				<div class="dropdown">
+  					<button class="dropbtn">Portfolio</button>
+  					<div class="dropdown-content">
+    					<a href="HTML/vacation.html">Vacation Website</a>
+    					<a href="HTML/assignment2.html">Assignment 2</a>
+    					<a href="HTML/assignment3.html">Assignment 3</a>
+    					<a href="HTML/assignment5-1.html">Assignment 5-1</a>
+    					<a href="HTML/assignment5-2.html">Assignment 5-2</a>
+    					<a href="HTML/assignment5-3.html">Assignment 5-3</a>
+    					<a href="HTML/media.html">Media Website</a>
+  					</div>
+				</div>
+				<div class="filler">
+					
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="bottom-left">
+				<div class="bottom-leftcontact">
+					<div class="bottom-leftcontact-header">
+						<h2>Contact</h2>
+					</div>
+					<div class="bottom-leftcontact-pics">
+						<div class="bottom-leftcontact-pic1">
+							<img src="Images/mailtime.png" width="30px" height="30px">
+						</div>
+						<div class="bottom-leftcontact-pic2">
+							<img src="Images/location.png" width="40px" height="40px">
+						</div>
+						<div class="bottom-leftcontact-pic3">
+							<img src="Images/phone.png" width="25px" height="30px">
+						</div>
+					</div>
+					<div class="bottom-leftcontact-texts">
+						<div class="bottom-leftcontact-text1">
+							<p>jkarpinski@student.shsd.org</p>
+						</div>
+						<div class="bottom-leftcontact-text2">
+							<p>25 Olcott Avenue, Bernardsville, New Jersey 07924</p>
+						</div>
+						<div class="bottom-leftcontact-text3">
+							<p>908-204-1930</p>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-leftprofile">
+					<div class="bottom-leftprofile-header">
+						<h2>Profile</h2>
+					</div>
+					<div class="bottom-leftprofile-text">
+						<p>Hi, my name is Julia Karpinski and I am 15 years old. I am a sophomore in High School. I am a compassionate and caring person who strives to achieve high academic achievements.</p>
+					</div>
+				</div>
+				<div class="bottom-leftsports">
+					<div class="bottom-leftsports-header">
+						<h2>Sports and Clubs</h2>
+					</div>
+					<div class="bottom-leftsports-text1">
+						<p>I played softball in high school since freshman year on varsity and club softball from 5th grade to 10th grade. I have also played basketball in high school since freshman year on JV and travel basketball from 4th grade to 7th grade.</p>
+					</div>
+					<div class="bottom-leftsports-text2">
+						<p>I am a BHS book club member, chemistry club member, and volleyball club member since earlier this school year.</p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-right">
+				<div class="bottom-righteducation">
+					<div class="bottom-righteducation-header">
+						<h2>Education</h2> 
+					</div>
+					<div class="bottom-righteducation-text1">
+						<p>Bernardsville Middle School, Bernardsville, NJ</p>
+					</div>
+					<div class="bottom-righteducation-list1">
+						<ul>
+							<li>Fall 2016 - Summer 2020</li>
+						</ul>
+					</div>
+					<div class="bottom-righteducation-text2">
+						<p>Bernards High School, Bernardsville, NJ</p>
+					</div>
+					<div class="bottom-righteducation-list2">
+						<ul>
+							<li>Sophomore</li>
+							<li>Fall 2020 - Present</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom-rightexperience">
+					<div class="bottom-rightexperience-header">
+						<h2>Experience</h2>
+					</div>
+					<div class="bottom-rightexperience-text1">
+						<p>Somerset Hills YMCA, Basking Ridge NJ | June 2021 - July 2021</p>
+					</div>
+					<div class="bottom-rightexperience-text2">
+						<p>Counselor in Training</p>
+					</div>
+					<div class="bottom-rightexperience-list1">
+						<ul>
+							<li>Led and organized group activities</li>
+							<li>Planned a camp day</li>
+							<li>Brainstormed and executed a service project</li>
+						</ul>
+					</div>
+					<div class="bottom-rightexperience-text3">
+						<p>Softball Clinic, Bernardsville NJ | Fall 2019</p>
+					</div>
+					<div class="bottom-rightexperience-text4">
+						<p>Helper/Demonstrator</p>
+					</div>
+					<div class="bottom-rightexperience-list2">
+						<ul>
+							<li>Helped organize activities</li>
+							<li>Interacted with the children and helped them improve</li>
+							<li>Assisted in demonstrating skills</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom-rightawards">
+					<div class="bottom-rightawards-header">
+						<h2>Awards</h2>
+					</div>
+					<div class="bottom-rightawards-list">
+						<ul>
+							<li>Millicent Fenwick award in 2017-2020</li>
+							<li>Honor roll in mathematics from 2017 to present</li>
+							<li>Honor roll in english from 2017 to present</li>
+							<li>Honor roll in science from 2019 to present</li>
+							<li>Honor roll in history in 2021 to 2022</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
